@@ -17,8 +17,20 @@ final class RMCharacterViewController: UIViewController {
         title = "Characters"
 
         // Do any additional setup after loading the view.
-    }
     
+    let request = RMRequest(
+        endpoint: .character,
+        queryParameters: [
+        URLQueryItem(name: "name", value: "rick"),
+        URLQueryItem(name: "status", value: "alive")
+      ]
+        
+            )
+        print(request.url!)
+        }
+    }
+
+
 
     /*
     // MARK: - Navigation
@@ -29,4 +41,4 @@ final class RMCharacterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
+
