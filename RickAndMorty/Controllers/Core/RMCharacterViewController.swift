@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller and Search for Characters 
 final class RMCharacterViewController: UIViewController {
 
     
